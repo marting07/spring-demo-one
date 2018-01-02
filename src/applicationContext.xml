@@ -7,18 +7,20 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean id="myFortuneService"
-		  class="com.luv2code.springdemo.HappyFortuneService">
-	</bean>
+    <bean id="myFortuneService"
+        class="com.luv2code.springdemo.HappyFortuneService">
+    </bean>
 	
-	<bean id="myCoach"
-		  class="com.luv2code.springdemo.TrackCoach">
-		<constructor-arg ref="myFortuneService" />
-	</bean>
+    <bean id="myCoach"
+        class="com.luv2code.springdemo.TrackCoach">
+        <constructor-arg ref="myFortuneService" />
+    </bean>
     
-	<bean id="mySoccerCoach"
-		  class="com.luv2code.springdemo.SoccerCoach">
-		<property name="fortuneService" ref="myFortuneService" />
-	</bean>
+    <bean id="mySoccerCoach"
+        class="com.luv2code.springdemo.SoccerCoach">
+        <property name="fortuneService" ref="myFortuneService" />
+        <property name="emailAddress" value="thebestcoach@luv2code.com" />
+        <property name="team" value="Sunrisers Hyderabad" />
+    </bean>
 
 </beans>
