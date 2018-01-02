@@ -10,13 +10,11 @@ package com.luv2code.springdemo;
  * @author marting
  */
 public class MyApp {
-
-	/**
-	 * @param args the command line arguments
-	 */
-	public static void main(String[] args) {
-		Coach theCoach = new TrackCoach();
-		System.out.println(theCoach.getDailyWorkout());
-	}
-	
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Coach theCoach = new TrackCoach();
+        System.out.println(theCoach.getDailyWorkout());
+    }
 }

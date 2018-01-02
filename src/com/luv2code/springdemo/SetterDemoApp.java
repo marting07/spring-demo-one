@@ -12,15 +12,15 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @author marting
  */
 public class SetterDemoApp {
-	/**
-	 * @param args the command line arguments
-	 */
-	public static void main(String[] args) {
-		ClassPathXmlApplicationContext context =
-				new ClassPathXmlApplicationContext("applicationContext.xml");
-		SoccerCoach theCoach = context.getBean("mySoccerCoach", SoccerCoach.class);
-		System.out.println(theCoach.getDailyWorkout());
-		System.out.println(theCoach.getDailyFortune());
-		context.close();
-	}
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        ClassPathXmlApplicationContext context
+            = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SoccerCoach theCoach = context.getBean("mySoccerCoach", SoccerCoach.class);
+        System.out.println(theCoach.getDailyWorkout());
+        System.out.println(theCoach.getDailyFortune());
+        context.close();
+    }
 }

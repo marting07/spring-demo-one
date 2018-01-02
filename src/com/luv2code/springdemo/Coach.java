@@ -10,7 +10,7 @@ package com.luv2code.springdemo;
  * @author marting
  */
 public interface Coach {
-	public String getDailyWorkout();
+    public String getDailyWorkout();
 
-	public String getDailyFortune();
+    public String getDailyFortune();
 }

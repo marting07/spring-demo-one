@@ -10,5 +10,5 @@ package com.luv2code.springdemo;
  * @author marting
  */
 public interface FortuneService {
-	public String getFortune();	
+    public String getFortune();
 }
